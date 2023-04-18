@@ -14,7 +14,7 @@ const config = {
 
   // basic site info (required)
   name: '南风老胡',
-  domain: 'hyjp.notion.site',
+  domain: 'islaohu.vercel.app',
   author: '南风老胡',
   yearStarted: 2023,
 

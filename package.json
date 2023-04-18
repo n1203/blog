@@ -2,9 +2,8 @@
   "name": "blog",
   "version": "1.0.0",
   "private": true,
-  "description": "Jerry K Jia's Blog",
-  "author": "Jkker <j@erry.dev>",
-  "repository": "Jkker/blog",
+  "description": "南风老胡的博客",
+  "author": "南风老胡 <islaohu@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",

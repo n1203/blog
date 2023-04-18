@@ -7,10 +7,10 @@ const GiscusComponent = ({ className = undefined }) => {
   return (
     <section className={className ?? ''}>
       <giscus-widget
-        repo='Jkker/blog'
-        repoid='R_kgDOH79Ujw'
-        category='Replies'
-        categoryid='DIC_kwDOH79Uj84CROkR'
+        repo='n1203/blog'
+        repoid='R_kgDOJYNtFg'
+        category='Show and tell'
+        categoryid='DIC_kwDOJYNtFs4CV3C2'
         mapping='pathname'
         strict='0'
         reactionsenabled='1'

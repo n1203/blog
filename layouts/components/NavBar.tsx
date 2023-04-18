@@ -4,7 +4,7 @@ import Collapse from '@/components/Collapse'
 import Rotate from '@/components/Rotate'
 import ToggleThemeButton from '@/components/ToggleThemeButton'
 import { navigationLinks } from '@/lib/config'
-import Avatar from '@/public/avatar.webp'
+import Avatar from '@/public/avatar.jpg'
 import useClickOutside from '@/utils/useClickOutside'
 import cx from 'clsx'
 import throttle from 'lodash.throttle'
@@ -33,7 +33,7 @@ const AvatarIcon = ({ className = '' }) => (
     }
     title='About Me'
   >
-    Jerry K Jia
+    南风老胡
   </Button>
 )
 

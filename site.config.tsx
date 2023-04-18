@@ -4,31 +4,28 @@ import { RiUser3Fill } from 'react-icons/ri'
 
 const config = {
   // the site's root Notion page (required)
-
-  // Blog
-  rootNotionPageId: 'eae99f65470b415b913f482060e43381',
-  postsCollectionId: '046e539cfcd04dad8704d00994d66bed',
-  // Test Suite
-  // rootNotionPageId: '067dd719a912471ea9a3ac10710e7fdf',
-
+  rootNotionPageId: 'd0b2db623883476abc5b55cdb1e98560',
+  postsCollectionId: '9af3a7bbfefb40c1acce692b55f32498',
+  // Test Suite  https://www.notion.so/hyjp/34efd56751ca4be49bc11aabf6ef334d?v=2c78817660b041c79a1405147368b200
+  // rootNotionPageId: '067dd719a912471ea9a3ac10710e7fdf', https://hyjp.notion.site/d0b2db623883476abc5b55cdb1e98560
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Anti-Involutionist',
-  domain: 'www.jerrykjia.com',
-  author: 'Jerry K Jia',
-  yearStarted: 2022,
+  name: '南风老胡',
+  domain: 'hyjp.notion.site',
+  author: '南风老胡',
+  yearStarted: 2023,
 
   // open graph metadata (optional)
-  description: 'Striving to escape the vortex of involution',
+  description: '组件世界/WidgetStore(原NotionPet)作者，目前是一名前端工程师。',
 
   // social usernames (optional)
-  // twitter: '_Jkker_',
-  github: 'Jkker',
-  linkedin: 'jerrykjia',
-  email: 'me@jerrykjia.com',
+  twitter: 'JunpingHu',
+  github: 'n1203',
+  // linkedin: 'jerrykjia',
+  email: 'islaohu@gmail.com',
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
@@ -52,9 +49,9 @@ const config = {
   // example:
   //
   pageUrlOverrides: {
-    '/acknowledgement-legal-information': 'ec61b821a2e74cb893df121f16cf8268',
-    '/about': '6ce65fc4d4be42e8b613cb8e6558c4cf',
-    '/snippets': '026ab99d63fd44e2bdfc1e1f0fccae62',
+    '/acknowledgement-legal-information': 'fcbb172be0dc41518d4907cb4e81923b',
+    '/about': 'fcbb172be0dc41518d4907cb4e81923b',
+    // '/snippets': 'fcbb172be0dc41518d4907cb4e81923b',
   },
 
   i18n: {
@@ -67,35 +64,11 @@ const config = {
   },
   projects: [
     {
-      title: 'NYU Unoccupied Space Finder',
-      description: `Find a place to chill-out when you're on campus`,
-      coverImage: '/images/alesia-kazantceva-VWcPlbHglYc-unsplash.jpg',
-      href: '/projects/nyu-space',
-    },
-    {
-      title: 'Brightspace File Organizer',
-      description: `Organize your Brightspace files and content`,
-      href: '/projects/brightspace',
-      coverImage: '/images/alfons-morales-YLSwjSy7stw-unsplash.jpg',
-    },
-    {
-      title: 'NYU Academic Calendar Subscriber',
-      description: `Subscribe to NYU's Academic Calendar via Google Calendar or iCal.`,
-      coverImage: '/images/nyu.jpg',
-      href: '/projects/nyu-academic-calendar',
-    },
-    {
-      title: 'Sunset Duration',
-      description: `Get the precise sunset duration of your current location`,
-      coverImage: '/images/sunset.png',
-      href: '/api/sunset',
-    },
-    {
-      title: 'Metasearch',
-      description: `An customizable search engine aggregator`,
-      coverImage: '/images/metasearch.jpg',
-      href: 'https://search.jerrykjia.com/',
-    },
+      title: '组件世界/WidgetStore',
+      description: `使用Notion小部件可以在几分钟内使您的页面更加可视化、交互性和实用性。一个服务于 Notion 类产品、双链笔记类产品、代码托管平台「GitHub 等」、博客系统「WordPress」以及为知笔记等文本编辑器的可嵌入式小组件库。`,
+      coverImage: '/images/photo-timer.svg',
+      href: 'https://widgetstore.net/',
+    }
   ],
   navigationLinks: [
     {
@@ -108,17 +81,17 @@ const config = {
       url: '/projects',
       icon: <FaProjectDiagram />,
     },
-    {
-      title: 'Snippets',
-      url: '/snippets',
-      icon: <FaCode />,
-      pageId: '026ab99d63fd44e2bdfc1e1f0fccae62',
-    },
+    // {
+    //   title: 'Snippets',
+    //   url: '/snippets',
+    //   icon: <FaCode />,
+    //   pageId: 'fcbb172be0dc41518d4907cb4e81923b',
+    // },
     {
       title: 'About',
       url: '/about',
       icon: <RiUser3Fill />,
-      pageId: '6ce65fc4d4be42e8b613cb8e6558c4cf',
+      pageId: 'fcbb172be0dc41518d4907cb4e81923b',
     },
   ],
 }

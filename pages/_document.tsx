@@ -5,8 +5,8 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-          <link rel='shortcut icon' href='/favicon.ico' />
-          <link rel='icon' type='image/ico' sizes='32x32' href='favicon.ico' />
+          <link rel='shortcut icon' href='/avatar.jpg' />
+          <link rel='icon' type='image/ico' sizes='32x32' href='/avatar.jpg' />
 
           {/* <link rel='manifest' href='/manifest.json' /> */}
         </Head>

@@ -116,7 +116,7 @@ export const TableOfContent: React.FC<{
         >
           <h3 className='uppercase text-black dark:text-white text-lg whitespace-nowrap my-1 font-light flex items-center gap-1'>
             <RiListCheck />
-            Table of Content
+            目录
           </h3>
           <div className='h-4 w-full shadow-2xl bg-gray-400/90 dark:bg-gray-600 font-sans rounded-md'>
             <div

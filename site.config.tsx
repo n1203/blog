@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaCode, FaHome, FaProjectDiagram } from 'react-icons/fa'
+import { FaCode, FaHome, FaProjectDiagram, FaCalendarTimes, FaSync } from 'react-icons/fa'
 import { RiUser3Fill } from 'react-icons/ri'
 
 const config = {
@@ -51,9 +51,10 @@ const config = {
   pageUrlOverrides: {
     '/acknowledgement-legal-information': 'fcbb172be0dc41518d4907cb4e81923b',
     '/about': 'fcbb172be0dc41518d4907cb4e81923b',
+    '/weakly': 'cc9327245b1b44eda2dc3e8de6628772',
+    '/2023': '8aeed267453d4e65aaa5b46dc2d59241',
     // '/snippets': 'fcbb172be0dc41518d4907cb4e81923b',
   },
-
   i18n: {
     'en-US': {
       dateFormat: 'MMM D, YYYY',
@@ -68,6 +69,18 @@ const config = {
       description: `使用Notion小部件可以在几分钟内使您的页面更加可视化、交互性和实用性。一个服务于 Notion 类产品、双链笔记类产品、代码托管平台「GitHub 等」、博客系统「WordPress」以及为知笔记等文本编辑器的可嵌入式小组件库。`,
       coverImage: '/images/photo-timer.svg',
       href: 'https://widgetstore.net/',
+    },
+    {
+      title: 'Notion汉化浏览器插件',
+      description: `基于reamd7提供的开源notion翻译脚本封装浏览器插件上架到各大浏览器应用市场，帮助近万名用户解决notion汉化问题。`,
+      coverImage: '/images/unnamed.jpg',
+      href: 'https://chrome.google.com/webstore/detail/notioncn/hmnaobgeiojplphcldmeiklgllchflpp?hl=en-US',
+    },
+    {
+      title: '效率时代',
+      description: `重构工作流，构建属于你的效率时代·`,
+      coverImage: '/images/image 1.png',
+      href: 'https://www.notion.pet/',
     }
   ],
   navigationLinks: [
@@ -80,6 +93,18 @@ const config = {
       title: 'Projects',
       url: '/projects',
       icon: <FaProjectDiagram />,
+    },
+    {
+      title: 'Weakly',
+      url: '/weakly',
+      icon: <FaCalendarTimes />,
+      pageId: 'cc9327245b1b44eda2dc3e8de6628772',
+    },
+    {
+      title: '2023Plan',
+      url: '/2023',
+      icon: <FaSync />,
+      pageId: '8aeed267453d4e65aaa5b46dc2d59241',
     },
     // {
     //   title: 'Snippets',

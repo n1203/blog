@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaCode, FaHome, FaProjectDiagram, FaCalendarTimes, FaSync } from 'react-icons/fa'
+import { FaHome, FaProjectDiagram, FaCalendarTimes, FaSync } from 'react-icons/fa'
 import { RiUser3Fill } from 'react-icons/ri'
 
 const config = {
@@ -51,7 +51,7 @@ const config = {
   pageUrlOverrides: {
     '/acknowledgement-legal-information': 'fcbb172be0dc41518d4907cb4e81923b',
     '/about': 'fcbb172be0dc41518d4907cb4e81923b',
-    '/weakly': 'cc9327245b1b44eda2dc3e8de6628772',
+    // '/weakly': 'cc9327245b1b44eda2dc3e8de6628772',
     '/2023': '8aeed267453d4e65aaa5b46dc2d59241',
     // '/snippets': 'fcbb172be0dc41518d4907cb4e81923b',
   },
@@ -94,12 +94,12 @@ const config = {
       url: '/projects',
       icon: <FaProjectDiagram />,
     },
-    {
-      title: 'Weakly',
-      url: '/weakly',
-      icon: <FaCalendarTimes />,
-      pageId: 'cc9327245b1b44eda2dc3e8de6628772',
-    },
+    // {
+    //   title: 'Weakly',
+    //   url: '/weakly',
+    //   icon: <FaCalendarTimes />,
+    //   pageId: 'cc9327245b1b44eda2dc3e8de6628772',
+    // },
     {
       title: '2023Plan',
       url: '/2023',

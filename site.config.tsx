@@ -51,8 +51,8 @@ const config = {
   pageUrlOverrides: {
     '/acknowledgement-legal-information': 'fcbb172be0dc41518d4907cb4e81923b',
     '/about': 'fcbb172be0dc41518d4907cb4e81923b',
-    // '/weakly': 'cc9327245b1b44eda2dc3e8de6628772',
     '/2023': '8aeed267453d4e65aaa5b46dc2d59241',
+    // '/weakly': 'cc9327245b1b44eda2dc3e8de6628772',
     // '/snippets': 'fcbb172be0dc41518d4907cb4e81923b',
   },
   i18n: {

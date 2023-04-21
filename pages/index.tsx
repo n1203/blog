@@ -28,7 +28,6 @@ export const getStaticProps = async () => {
     }
     const collectionId = parsePageId(config.postsCollectionId)
     const recordMap = props.recordMap
-    console.log("🚀 ~ file: index.tsx:31 ~ getStaticProps ~ recordMap:", recordMap, collectionId, recordMap.collection?.[collectionId])
     const getUrl = (pageId) =>
       getCanonicalPageId(parsePageId(pageId, { uuid: true }), recordMap, {
         uuid: process.env.NODE_ENV && process.env.NODE_ENV === 'development',

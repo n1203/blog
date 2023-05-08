@@ -4,7 +4,8 @@ import { RiUser3Fill } from 'react-icons/ri'
 
 const config = {
   // the site's root Notion page (required)
-  rootNotionPageId: 'd0b2db623883476abc5b55cdb1e98560',
+  // https://hyjp.notion.site/Blog-d0b2db623883476abc5b55cdb1e98560
+  rootNotionPageId: 'Blog-d0b2db623883476abc5b55cdb1e98560',
   postsCollectionId: '9af3a7bbfefb40c1acce692b55f32498',
   // Test Suite  https://www.notion.so/hyjp/34efd56751ca4be49bc11aabf6ef334d?v=2c78817660b041c79a1405147368b200
   // rootNotionPageId: '067dd719a912471ea9a3ac10710e7fdf', https://hyjp.notion.site/d0b2db623883476abc5b55cdb1e98560

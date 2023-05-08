@@ -43,7 +43,7 @@ export const getStaticProps = async () => {
 
     const postList = Object.entries(props.recordMap.block)
       .map(([id, { value: block }]) => {
-        if (parsePageId(block.parent_id) !== collectionId) return false
+        if (parsePageId(block?.parent_id) !== collectionId) return false
         const isPublic = getPageProperty<boolean>('Public', block, recordMap)
         if (!isPublic) return false
 

@@ -1,5 +1,10 @@
 import React from 'react'
-import { FaHome, FaProjectDiagram, FaCalendarTimes, FaSync } from 'react-icons/fa'
+import {
+  FaHome,
+  FaProjectDiagram,
+  FaCalendarTimes,
+  FaSync,
+} from 'react-icons/fa'
 import { RiUser3Fill } from 'react-icons/ri'
 
 const config = {
@@ -7,6 +12,7 @@ const config = {
   // https://hyjp.notion.site/Blog-d0b2db623883476abc5b55cdb1e98560
   rootNotionPageId: 'd0b2db623883476abc5b55cdb1e98560',
   postsCollectionId: '9af3a7bbfefb40c1acce692b55f32498',
+  // 046e539cfcd04dad8704d00994d66bed
   // Test Suite  https://www.notion.so/hyjp/34efd56751ca4be49bc11aabf6ef334d?v=2c78817660b041c79a1405147368b200
   // rootNotionPageId: '067dd719a912471ea9a3ac10710e7fdf', https://hyjp.notion.site/d0b2db623883476abc5b55cdb1e98560
   // if you want to restrict pages to a single notion workspace (optional)
@@ -52,8 +58,8 @@ const config = {
   pageUrlOverrides: {
     '/acknowledgement-legal-information': 'fcbb172be0dc41518d4907cb4e81923b',
     '/about': 'fcbb172be0dc41518d4907cb4e81923b',
-    // '/2023': '8aeed267453d4e65aaa5b46dc2d59241',
-    // '/weakly': 'cc9327245b1b44eda2dc3e8de6628772',
+    '/2023': '8aeed267453d4e65aaa5b46dc2d59241',
+    '/weakly': 'cc9327245b1b44eda2dc3e8de6628772',
     // '/snippets': 'fcbb172be0dc41518d4907cb4e81923b',
   },
   i18n: {
@@ -82,7 +88,7 @@ const config = {
       description: `重构工作流，构建属于你的效率时代·`,
       coverImage: '/images/image 1.png',
       href: 'https://www.notion.pet/',
-    }
+    },
   ],
   navigationLinks: [
     {
@@ -95,12 +101,12 @@ const config = {
       url: '/projects',
       icon: <FaProjectDiagram />,
     },
-    // {
-    //   title: 'Weakly',
-    //   url: '/weakly',
-    //   icon: <FaCalendarTimes />,
-    //   pageId: 'cc9327245b1b44eda2dc3e8de6628772',
-    // },
+    {
+      title: 'Weakly',
+      url: '/weakly',
+      icon: <FaCalendarTimes />,
+      pageId: 'cc9327245b1b44eda2dc3e8de6628772',
+    },
     {
       title: '2023Plan',
       url: '/2023',

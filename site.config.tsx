@@ -76,6 +76,12 @@ const config = {
   },
   projects: [
     {
+      title: 'BBlog',
+      description: `仅凭一个链接聚合你的所有信息，个人博客、社交链接、微站点、数字名片、导航站点、个人简历站点`,
+      coverImage: '/images/image-11.png',
+      href: 'https://app.bblog.cc',
+    },
+    {
       title: '组件世界/WidgetStore',
       description: `使用Notion小部件可以在几分钟内使您的页面更加可视化、交互性和实用性。一个服务于 Notion 类产品、双链笔记类产品、代码托管平台「GitHub 等」、博客系统「WordPress」以及为知笔记等文本编辑器的可嵌入式小组件库。`,
       coverImage: '/images/photo-timer.svg',

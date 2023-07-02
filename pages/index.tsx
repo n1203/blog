@@ -28,11 +28,11 @@ export const getStaticProps = async () => {
     }
     const collectionId = parsePageId(config.postsCollectionId)
     const recordMap = props.recordMap
+    console.log("🚀 ~ file: index.tsx:31 ~ getStaticProps ~ recordMap:", recordMap)
     const getUrl = (pageId) =>
       getCanonicalPageId(parsePageId(pageId, { uuid: true }), recordMap, {
         uuid: process.env.NODE_ENV && process.env.NODE_ENV === 'development',
       })
-
     const schema = recordMap.collection?.[collectionId]?.value?.schema
     const tagSchemaOptions = Object.values(schema).find(
       (x) => x.name === 'Tags'

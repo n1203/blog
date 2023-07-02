@@ -9,9 +9,13 @@ import { RiUser3Fill } from 'react-icons/ri'
 
 const config = {
   // the site's root Notion page (required)
-  // https://hyjp.notion.site/Blog-d0b2db623883476abc5b55cdb1e98560
-  rootNotionPageId: 'd0b2db623883476abc5b55cdb1e98560',
-  postsCollectionId: '9af3a7bbfefb40c1acce692b55f32498',
+  // a10df432e00a40e69307719dda272957
+  rootNotionPageId: 'a10df432e00a40e69307719dda272957',
+  // https://www.notion.so/300a6e48ae044c3585b2fda4b75e26a3?v=9df8dd772d14433aaa5c1863f189857f&pvs=4
+    // https://www.notion.so/hyjp/300a6e48ae044c3585b2fda4b75e26a3?v=9df8dd772d14433aaa5c1863f189857f&pvs=4
+  // 
+  postsCollectionId: 'b7403b94ce54431e9d27dde1674597ec',
+  // https://www.notion.so/300a6e48ae044c3585b2fda4b75e26a3?v=9df8dd772d14433aaa5c1863f189857f&pvs=4
   // 046e539cfcd04dad8704d00994d66bed
   // Test Suite  https://www.notion.so/hyjp/34efd56751ca4be49bc11aabf6ef334d?v=2c78817660b041c79a1405147368b200
   // rootNotionPageId: '067dd719a912471ea9a3ac10710e7fdf', https://hyjp.notion.site/d0b2db623883476abc5b55cdb1e98560
@@ -21,7 +25,7 @@ const config = {
 
   // basic site info (required)
   name: '南风老胡',
-  domain: 'islaohu.vercel.app',
+  domain: 'laohu.notion.pet',
   author: '南风老胡',
   yearStarted: 2023,
 
@@ -56,11 +60,11 @@ const config = {
   // example:
   //
   pageUrlOverrides: {
-    '/acknowledgement-legal-information': 'fcbb172be0dc41518d4907cb4e81923b',
-    '/about': 'fcbb172be0dc41518d4907cb4e81923b',
-    '/2023': '8aeed267453d4e65aaa5b46dc2d59241',
-    '/weakly': 'cc9327245b1b44eda2dc3e8de6628772',
-    // '/snippets': 'fcbb172be0dc41518d4907cb4e81923b',
+    '/acknowledgement-legal-information': '1f7e5c19a9b646948836a76fdac45c6b',
+    '/about': '1f7e5c19a9b646948836a76fdac45c6b', // https://hyjp.notion.site/1f7e5c19a9b646948836a76fdac45c6b
+    '/2023': '4d38e4cadd934215977f7ff2532406a8', // https://hyjp.notion.site/2023-4d38e4cadd934215977f7ff2532406a8
+    '/weakly': '3b524e549cf44525a10a3480c6e7d1a7', // https://hyjp.notion.site/3b524e549cf44525a10a3480c6e7d1a7
+    // '/snippets': '1f7e5c19a9b646948836a76fdac45c6b',
   },
   i18n: {
     'en-US': {
@@ -105,25 +109,25 @@ const config = {
       title: 'Weakly',
       url: '/weakly',
       icon: <FaCalendarTimes />,
-      pageId: 'cc9327245b1b44eda2dc3e8de6628772',
+      pageId: '3b524e549cf44525a10a3480c6e7d1a7',
     },
     {
       title: '2023Plan',
       url: '/2023',
       icon: <FaSync />,
-      pageId: '8aeed267453d4e65aaa5b46dc2d59241',
+      pageId: '4d38e4cadd934215977f7ff2532406a8',
     },
     // {
     //   title: 'Snippets',
     //   url: '/snippets',
     //   icon: <FaCode />,
-    //   pageId: 'fcbb172be0dc41518d4907cb4e81923b',
+    //   pageId: '1f7e5c19a9b646948836a76fdac45c6b',
     // },
     {
       title: 'About',
       url: '/about',
       icon: <RiUser3Fill />,
-      pageId: 'fcbb172be0dc41518d4907cb4e81923b',
+      pageId: '1f7e5c19a9b646948836a76fdac45c6b',
     },
   ],
 }

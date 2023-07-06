@@ -19,14 +19,14 @@ const BlogPostCard = ({
   React.useEffect(() => {
     setMounted(true)
   }, [])
-  return <Link className="relative border rounded-2xl translate-x-8 transform-gpu transition-transform hover:-translate-y-1" href={url} passHref style={{
+  return <Link className="relative border dark:border-opacity-20 dark:border-white rounded-2xl translate-x-8 transform-gpu transition-transform hover:-translate-y-1" href={url} passHref style={{
     height: '288px',
     width: `calc(100% - 32px)`,
   }}>
-    <time className="absolute z-10 transform-gpu rotate-90 origin-top-left -left-2 rounded border px-2 text-black text-opacity-60 text-sm p-1 bg-white font-bold" dateTime={date}>
+    <time className="absolute z-10 transform-gpu rotate-90 origin-top-left -left-2 rounded border px-2 text-black dark:text-white dark:text-opacity-60 dark:bg-black bg-white text-opacity-60 text-sm p-1 font-bold dark:border-opacity-20 dark:border-white" dateTime={date}>
       {mounted ? new Date(date).toLocaleDateString() : ''}
     </time>
-    {!isEnd && <div className='w-0 h-full border-l transform-gpu -translate-x-6 translate-y-8 z-0' />}
+    {!isEnd && <div className='w-0 h-full border-l transform-gpu -translate-x-6 translate-y-8 z-0  dark:border-opacity-20 dark:border-white' />}
     <div  className="absolute top-0 left-0 right-0 bottom-0 z-10">
       <div className="top-0 right-0 absolute p-4 flex gap-2">
         {tags.map((tag) => (
@@ -48,7 +48,7 @@ const BlogPostCard = ({
           {icon && (
             <Icon icon={icon} size={28} sizeCls='h-6 w-6 lg:h-7 lg:w-7 bg-white bg-opacity-60 backdrop-blur-sm rounded' />
           )}
-          <p className="backdrop-blur-sm inline-block bg-white bg-opacity-60 py-0.5  px-2 text-black rounded whitespace-nowrap text-ellipsis overflow-hidden">
+          <p className="backdrop-blur-sm inline-block bg-white dark:text-white dark:bg-black bg-opacity-60 py-0.5  px-2 text-black rounded whitespace-nowrap text-ellipsis overflow-hidden">
             {title}
           </p>
           

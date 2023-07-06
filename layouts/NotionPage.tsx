@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import * as React from 'react'
+import LHLink from '@/components/Link'
 
 // core notion renderer
 import { NotionRenderer } from 'react-notion-x'
@@ -91,6 +92,7 @@ const Modal = dynamic(
   }
 )
 
+
 export const NotionPage: React.FC<
   types.PageProps & {
     title: string
@@ -107,6 +109,7 @@ export const NotionPage: React.FC<
     () => ({
       nextImage: NextImage,
       nextLink: Link,
+      Link: LHLink,
       Code,
       Collection,
       Equation,

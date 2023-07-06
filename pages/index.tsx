@@ -1,4 +1,4 @@
-import BlogPostCard from '@/layouts/components/BlogPostCard'
+import BlogPostCard from '@/layouts/components/BlogPostCardNext'
 import defaultCoverImage from '@/data/defaultCoverImage'
 import { Layout } from '@/layouts'
 import { getCanonicalPageId } from '@/lib/get-canonical-page-id'
@@ -91,7 +91,7 @@ export const getStaticProps = async () => {
       .filter(Boolean)
       // @ts-ignore
       .sort((a, b) => b?.date - a?.date)
-      
+
     props.postList = postList
 
     return { props, revalidate: 10 }
@@ -114,9 +114,9 @@ export default function NotionDomainPage(props) {
         src: cover,
       }}
     >
-      <div className='space-y-4 lg:space-y-8 container'>
-        {props.postList.map((post) => (
-          <BlogPostCard key={post.id} {...post} />
+      <div className='container grid grid-cols-1 gap-4'>
+        {props.postList.map((post, index) => (
+          <BlogPostCard key={post.id} isEnd={index === props.postList.length - 1} {...post} />
         ))}
       </div>
     </Layout>

@@ -89,10 +89,10 @@ export const getStaticProps = async () => {
         }
       })
       .filter(Boolean)
+      // @ts-ignore
       .sort((a, b) => b?.date - a?.date)
-
+      
     props.postList = postList
-    console.log("🚀 ~ file: index.tsx:94 ~ getStaticProps ~ postList:", postList)
 
     return { props, revalidate: 10 }
   } catch (err) {

@@ -28,7 +28,6 @@ export const getStaticProps = async () => {
     }
     const collectionId = parsePageId(config.postsCollectionId)
     const recordMap = props.recordMap
-    console.log("🚀 ~ file: index.tsx:31 ~ getStaticProps ~ recordMap:", recordMap)
     const getUrl = (pageId) =>
       getCanonicalPageId(parsePageId(pageId, { uuid: true }), recordMap, {
         uuid: process.env.NODE_ENV && process.env.NODE_ENV === 'development',
@@ -90,8 +89,10 @@ export const getStaticProps = async () => {
         }
       })
       .filter(Boolean)
+      .sort((a, b) => b?.date - a?.date)
 
     props.postList = postList
+    console.log("🚀 ~ file: index.tsx:94 ~ getStaticProps ~ postList:", postList)
 
     return { props, revalidate: 10 }
   } catch (err) {

@@ -85,7 +85,7 @@ export function Layout({
         {children}
       </div>
       <Footer />
-      <Toolbar hasToc={hasToc} showNav={showNav} hasComment={hasComment} />
+      <Toolbar hasToc={hasToc} hasComment={hasComment} />
     </div>
   )
 }

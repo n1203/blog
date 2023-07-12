@@ -21,7 +21,6 @@ export function Layout({
 
   socialImage,
   coverImage,
-
   noPadding = false,
   hasToc = false,
   hasComment = false,

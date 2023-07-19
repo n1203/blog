@@ -1,11 +1,10 @@
-import Toolbar from '@/components/Toolbar'
 import cx from 'clsx'
-
 import { useState } from 'react'
 import Header from './components/Header'
 import { Footer } from './components/Footer'
 import { NavBar } from './components/NavBar'
 import { PageHTMLHead } from './PageHTMLHead'
+import DockToolbar from '@/components/dock-toolbar'
 
 export function Layout({
   children,
@@ -85,7 +84,7 @@ export function Layout({
         {children}
       </div>
       <Footer />
-      <Toolbar hasToc={hasToc} hasComment={hasComment} />
+      <DockToolbar hasToc={hasToc} hasComment={hasComment}  />
     </div>
   )
 }

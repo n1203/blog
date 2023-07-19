@@ -78,8 +78,9 @@ export const PageHTMLHead: React.FC<
         href='https://fonts.gstatic.com'
         crossOrigin='anonymous'
       />
+      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+      <script src='https://unpkg.com/dockbar@latest/dockbar.iife.js'></script>
       {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
       <title>{`${title} | ${site?.name}` || 'Loading...'}</title>
